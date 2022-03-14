@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4E9D5"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="#00000000"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="بيانات العميل"
+        android:textColor="#009688"
+        android:textSize="48sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="266dp"
+        android:layout_height="148dp"
+        android:layout_below="@+id/appName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="77dp"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/people_greeting_gesture_different_nations_istock_1206031687_customized_welcome" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="313dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="right"
+        android:text="الرجاء إدخال البيانات التالية:"
+        android:textColor="#EF3373"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:padding="8dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="#6DFF9800"
+        android:ems="10"
+        android:hint="الإسم   "
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#03A697"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/Age"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@+id/Name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#6DFF9800"
+        android:ems="10"
+        android:hint="العمر"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="#03A697"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_below="@+id/Age"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="130dp"
+        android:backgroundTint="#E86893"
+        android:enabled="false"
+        android:text="التالي"
+        android:textSize="34sp"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>
